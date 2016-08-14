@@ -11,7 +11,7 @@ To add dependencies (requires Ruby and RubyGems):
 
 To update stylesheets:
 ```
->sass --watch sass:./
+>sass --watch sass:./ -t expanded
 ```
 
 For production, minified and without sourcemap:
