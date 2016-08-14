@@ -1,6 +1,14 @@
 # Pfersick
 Theme for lazychickenfarm.com
 
+To add dependencies (requires Ruby and RubyGems):
+
+```
+>gem install bundler
+>bundle install
+>bourbon install --path=sass/vendor
+```
+
 To update stylesheets:
 ```
 >sass --watch sass:./
