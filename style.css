@@ -706,8 +706,13 @@ a:hover, a:active {
 }
 
 .site {
+  background-color: #f8fff0;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.site-content {
+  padding: 16px;
 }
 
 /*--------------------------------------------------------------
