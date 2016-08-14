@@ -1,5 +1,9 @@
 @import "../layout/content-sidebar";
 // @import "../layout/sidebar-content";
+.site {
+	max-width: $size__site-max-width;
+	margin: 0 auto;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
