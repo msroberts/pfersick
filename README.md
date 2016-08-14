@@ -1,12 +1,12 @@
 # Pfersick
 Theme for lazychickenfarm.com
 
-To update scss:
+To update stylesheets:
 ```
->sass -t expanded sass/style.scss style.css
+>sass --watch sass:./
 ```
 
 For production, minified and without sourcemap:
 ```
->sass -t compressed --sourcemap=none sass/style.scss style.css
+>sass --update sass:./ -t compressed --sourcemap=none
 ```
