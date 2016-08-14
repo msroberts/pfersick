@@ -644,30 +644,21 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before::after,
-.clear:after::after,
-.entry-content:before::after,
-.entry-content:after::after,
-.comment-content:before::after,
-.comment-content:after::after,
-.site-header:before::after,
-.site-header:after::after,
-.site-content:before::after,
-.site-content:after::after,
-.site-footer:before::after,
-.site-footer:after::after {
+.clear::after,
+.entry-content::after,
+.comment-content::after,
+.site-header::after,
+.site-content::after,
+.site-footer::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
+.site-header::before {
   clear: both;
+  content: "";
+  display: table;
 }
 
 /*--------------------------------------------------------------
