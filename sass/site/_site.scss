@@ -1,13 +1,18 @@
 @import "../layout/content-sidebar";
 // @import "../layout/sidebar-content";
 .site {
-	background-color: $color__background-page;
+	background-color: $color__background-screen;
 	max-width: $size__site-max-width;
-	margin: 0 auto;
+	margin: 0 auto 1em;
 }
 .site-content {
+	background-color: $color__background-page;
 	padding: 16px;
 }
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@import "header";
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
