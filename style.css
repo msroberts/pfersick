@@ -34,6 +34,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Clearings
 # Widgets
 # Content
+	## Header
 	## Posts and pages
 	## Comments
 # Infinite scroll
@@ -338,7 +339,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #14937e;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -594,7 +595,7 @@ a:hover, a:active {
   overflow: hidden;
 }
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
+  background-color: #dcf0dc;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
@@ -697,13 +698,40 @@ a:hover, a:active {
 }
 
 .site {
-  background-color: #f8fff0;
+  background-color: #dcf0dc;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 1em;
 }
 
 .site-content {
+  background-color: #f6f9ff;
   padding: 16px;
+}
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.site-branding {
+  color: #005c60;
+  font-family: "Book Antiqua", Constantia, "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  padding: 4px 4px 4px 64px;
+}
+
+.site-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.site-title a:hover, .site-title a:focus {
+  text-decoration: underline;
+}
+
+.site-description {
+  margin: 0;
 }
 
 /*--------------------------------------------------------------
