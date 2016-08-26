@@ -712,10 +712,15 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+.site-header {
+  position: relative;
+  min-height: 64px;
+}
+
 .site-branding {
   color: #005c60;
   font-family: "Book Antiqua", Constantia, "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  padding: 4px 4px 4px 64px;
+  padding: 4px 64px 4px 56px;
 }
 
 .site-title {
@@ -733,6 +738,23 @@ a:hover, a:active {
 
 .site-description {
   margin: 0;
+}
+
+.menu-toggle {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px;
+}
+.menu-toggle:active, .menu-toggle:focus {
+  box-shadow: none;
+}
+.menu-toggle svg {
+  fill: #005c60;
 }
 
 /*--------------------------------------------------------------
