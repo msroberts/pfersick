@@ -752,6 +752,7 @@ a:hover, a:active {
 }
 .menu-toggle:active, .menu-toggle:hover, .menu-toggle:focus {
   box-shadow: none;
+  opacity: 0.5;
 }
 .menu-toggle svg {
   fill: #005c60;

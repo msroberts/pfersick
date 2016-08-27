@@ -36,6 +36,7 @@
   &:hover,
   &:focus {
     box-shadow: none;
+    opacity: 0.5;
   }
   svg {
     fill: $color__text-heading;
