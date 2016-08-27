@@ -750,7 +750,7 @@ a:hover, a:active {
   right: 0;
   padding: 8px 12px;
 }
-.menu-toggle:active, .menu-toggle:focus {
+.menu-toggle:active, .menu-toggle:hover, .menu-toggle:focus {
   box-shadow: none;
 }
 .menu-toggle svg {
