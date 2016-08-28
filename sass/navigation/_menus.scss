@@ -53,8 +53,14 @@
 
 	a {
 		display: block;
+		color: $color__text-heading;
 		padding: 0.375em 0.5em;
 		text-decoration: none;
+		&:hover,
+		&:focus {
+			background-color: $color__background-body;
+			color: $color__background-page;
+		}
 	}
 
 	.current_page_item > a,

@@ -540,8 +540,13 @@ a:hover, a:active {
 }
 .main-navigation a {
   display: block;
+  color: #005c60;
   padding: 0.375em 0.5em;
   text-decoration: none;
+}
+.main-navigation a:hover, .main-navigation a:focus {
+  background-color: #14937e;
+  color: #f6f9ff;
 }
 
 /* Small menu. */
