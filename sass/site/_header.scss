@@ -3,6 +3,8 @@
   min-height: 64px;
 }
 .site-branding {
+  background-size: contain;
+  background-repeat: no-repeat;
   color: $color__text-heading;
   font-family: $font__heading;
   padding: 4px 64px 4px 56px;

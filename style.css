@@ -734,6 +734,8 @@ a:hover, a:active {
 }
 
 .site-branding {
+  background-size: contain;
+  background-repeat: no-repeat;
   color: #005c60;
   font-family: "Book Antiqua", Constantia, "Georgia", "Cambria", "Times New Roman", "Times", serif;
   padding: 4px 64px 4px 56px;
