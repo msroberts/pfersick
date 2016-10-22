@@ -2,7 +2,7 @@ $color__background-body: #14937e;
 $color__background-screen: #dcf0dc;
 $color__background-page: #f6f9ff;
 $color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
+$color__background-button: #14937e;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 
@@ -15,8 +15,8 @@ $color__link-visited: darkviolet;
 $color__link-hover: deepskyblue;
 $color__text-main: #333;
 
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-button: $color__background-button $color__background-button darken($color__background-button, 5%);
+$color__border-button-hover: $color__background-button darken($color__background-button, 5%) darken($color__background-button, 10%);
+$color__border-button-focus: darken($color__background-button, 10%) darken($color__background-button, 5%) darken($color__background-button, 5%);
 $color__border-input: #ccc;
 $color__border-abbr: #666;

@@ -72,11 +72,12 @@
 
 /* Small menu. */
 .menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation.toggled ul,
+.main-navigation.toggled .search-form {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: $size__breakpoint-small) {
 	.menu-toggle {
 		display: none;
 	}
