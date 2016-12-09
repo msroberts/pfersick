@@ -738,6 +738,7 @@ a:hover, a:active {
   padding: 0.5em 2.5em 0.5em 0.5em;
   position: relative;
   display: none;
+  z-index: 50;
 }
 .site-header .search-form input {
   font-size: inherit;
