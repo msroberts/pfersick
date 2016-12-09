@@ -755,6 +755,7 @@ a:hover, a:active {
   border-bottom-left-radius: 0;
   color: transparent;
   position: absolute;
+  overflow: hidden;
   top: 0.5em;
   right: 0.5em;
   text-shadow: none;
