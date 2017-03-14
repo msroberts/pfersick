@@ -22,7 +22,31 @@
 	margin: 1.5em 0 0;
 }
 
+.search {
+	.alignleft {
+		margin: 1em 1em 0 0;
+		width: 75px;
+	}
+	
+	.entry-summary {
+		margin-top: 1em;
+	}
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+@media screen and (min-width: $size__breakpoint-small) {
+	a.entry-image {
+		float: right;
+		max-width: $size__breakpoint-small / 2;
+	}
+}
+
+@media screen and (min-width: $size__breakpoint-large) {
+	a.entry-image {
+		max-width: $size__breakpoint-large / 2;
+	}
 }

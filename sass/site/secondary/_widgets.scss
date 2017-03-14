@@ -6,3 +6,14 @@
 		max-width: 100%;
 	}
 }
+
+@media screen and (min-width: $size__site-max-width) {
+	.widget-area {
+		display: flex;
+		flex-wrap: wrap;
+
+		.widget {
+			flex-basis: (100% / 3);
+		}
+	}
+}

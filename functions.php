@@ -64,6 +64,9 @@ function pfersick_setup() {
 		'default-color' => '14937e',
 		'default-image' => '',
 	) ) );
+
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
 }
 endif;
 add_action( 'after_setup_theme', 'pfersick_setup' );

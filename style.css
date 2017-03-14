@@ -404,11 +404,11 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: #14937e #14937e #117d6b;
   border-radius: 3px;
-  background: #e6e6e6;
+  background: #14937e;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.625);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
@@ -419,7 +419,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
+  border-color: #14937e #117d6b #0e6658;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
 button:active, button:focus,
@@ -429,7 +429,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  border-color: #aaa #bbb #bbb;
+  border-color: #0e6658 #117d6b #117d6b;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -519,10 +519,7 @@ a:hover, a:active {
   padding-left: 0;
 }
 .main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
   position: absolute;
-  top: 1.5em;
   left: -999em;
   z-index: 99999;
 }
@@ -533,25 +530,29 @@ a:hover, a:active {
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
-.main-navigation ul ul a {
-  width: 200px;
-}
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
+  position: relative;
   left: auto;
 }
 .main-navigation li {
-  float: left;
   position: relative;
 }
 .main-navigation a {
   display: block;
+  color: #005c60;
+  padding: 0.375em 0.5em;
   text-decoration: none;
+}
+.main-navigation a:hover, .main-navigation a:focus {
+  background-color: #14937e;
+  color: #f6f9ff;
 }
 
 /* Small menu. */
 .menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation.toggled ul,
+.main-navigation.toggled .search-form {
   display: block;
 }
 
@@ -562,6 +563,22 @@ a:hover, a:active {
 
   .main-navigation ul {
     display: block;
+  }
+  .main-navigation ul ul {
+    background-color: #f6f9ff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    top: 2em;
+  }
+  .main-navigation ul ul a {
+    width: 200px;
+  }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    position: absolute;
+  }
+  .main-navigation li {
+    float: left;
   }
 }
 .site-main .comment-navigation, .site-main
@@ -674,33 +691,21 @@ a:hover, a:active {
   max-width: 100%;
 }
 
+@media screen and (min-width: 67.5em) {
+  .widget-area {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .widget-area .widget {
+    flex-basis: 33.33333%;
+  }
+}
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.content-area {
-  float: left;
-  margin: 0 -25% 0 0;
-  width: 100%;
-}
-
-.site-main {
-  margin: 0 25% 0 0;
-}
-
-.site-content .widget-area {
-  float: right;
-  overflow: hidden;
-  width: 25%;
-}
-
-.site-footer {
-  clear: both;
-  width: 100%;
-}
-
 .site {
   background-color: #dcf0dc;
-  max-width: 1200px;
+  max-width: 67.5em;
   margin: 0 auto 1em;
 }
 
@@ -712,10 +717,81 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+.site-header {
+  position: relative;
+  min-height: 64px;
+}
+@media screen and (max-width: 37.5em) {
+  .site-header {
+    background-color: inherit;
+    position: sticky;
+    top: 0;
+  }
+}
+.site-header .search-form {
+  padding: 0.5em 2.5em 0.5em 0.5em;
+  position: relative;
+  display: none;
+  z-index: 50;
+}
+.site-header .search-form input {
+  font-size: inherit;
+}
+.site-header .search-form input[type="search"] {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+}
+.site-header .search-form input[type="submit"] {
+  background-image: url(images/ic_search_white_24px.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: transparent;
+  position: absolute;
+  overflow: hidden;
+  top: 0.5em;
+  right: 0.5em;
+  text-shadow: none;
+  width: 2em;
+  height: 1.75em;
+}
+
+@media screen and (min-width: 37.5em) {
+  .site-header .search-form {
+    display: block;
+    padding: 0 2em 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .site-header .search-form input[type="search"] {
+    transition: width 0.3s ease-out;
+    width: 6em;
+  }
+  .site-header .search-form input[type="search"]:focus {
+    width: 20em;
+  }
+  .site-header .search-form input[type="submit"] {
+    top: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 65em) {
+  .site-header .search-form input[type="search"] {
+    width: 16.375em;
+  }
+  .site-header .search-form input[type="search"]:focus {
+    width: 25.3125em;
+  }
+}
 .site-branding {
+  background-size: contain;
+  background-repeat: no-repeat;
   color: #005c60;
   font-family: "Book Antiqua", Constantia, "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  padding: 4px 4px 4px 64px;
+  padding: 4px 64px 4px 56px;
 }
 
 .site-title {
@@ -733,6 +809,24 @@ a:hover, a:active {
 
 .site-description {
   margin: 0;
+}
+
+.menu-toggle {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px;
+}
+.menu-toggle:active, .menu-toggle:hover, .menu-toggle:focus {
+  box-shadow: none;
+  opacity: 0.5;
+}
+.menu-toggle svg {
+  fill: #005c60;
 }
 
 /*--------------------------------------------------------------
@@ -762,11 +856,30 @@ a:hover, a:active {
   margin: 1.5em 0 0;
 }
 
+.search .alignleft {
+  margin: 1em 1em 0 0;
+  width: 75px;
+}
+.search .entry-summary {
+  margin-top: 1em;
+}
+
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
+@media screen and (min-width: 37.5em) {
+  a.entry-image {
+    float: right;
+    max-width: 18.75em;
+  }
+}
+@media screen and (min-width: 65em) {
+  a.entry-image {
+    max-width: 32.5em;
+  }
+}
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
