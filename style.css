@@ -691,6 +691,15 @@ a:hover, a:active {
   max-width: 100%;
 }
 
+@media screen and (min-width: 67.5em) {
+  .widget-area {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .widget-area .widget {
+    flex-basis: 33.33333%;
+  }
+}
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
