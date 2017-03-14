@@ -26,3 +26,17 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+@media screen and (min-width: $size__breakpoint-small) {
+	.entry-image {
+		float: right;
+		max-width: $size__breakpoint-small / 2;
+	}
+}
+
+@media screen and (min-width: $size__breakpoint-large) {
+	.entry-image {
+		float: right;
+		max-width: $size__breakpoint-large / 2;
+	}
+}
