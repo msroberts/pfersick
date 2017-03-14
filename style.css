@@ -855,14 +855,13 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 37.5em) {
-  .entry-image {
+  a.entry-image {
     float: right;
     max-width: 18.75em;
   }
 }
 @media screen and (min-width: 65em) {
-  .entry-image {
-    float: right;
+  a.entry-image {
     max-width: 32.5em;
   }
 }

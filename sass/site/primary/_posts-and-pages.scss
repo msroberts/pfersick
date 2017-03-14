@@ -28,15 +28,14 @@
 }
 
 @media screen and (min-width: $size__breakpoint-small) {
-	.entry-image {
+	a.entry-image {
 		float: right;
 		max-width: $size__breakpoint-small / 2;
 	}
 }
 
 @media screen and (min-width: $size__breakpoint-large) {
-	.entry-image {
-		float: right;
+	a.entry-image {
 		max-width: $size__breakpoint-large / 2;
 	}
 }

@@ -26,11 +26,15 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php if ( has_post_thumbnail() ) : ?>
-		<a class="entry-image" href="<?php the_permalink(); ?>">
-			<?php the_post_thumbnail( 'medium_large' ); ?>
-		</a>
-	<?php endif; ?>
+	<?php if ( has_post_thumbnail() ) :
+		if ( is_single() ) :
+			the_post_thumbnail( 'full', array(
+				'class' => 'entry-image',
+			) );
+		else :
+			printf('<a class="entry-image" href="%1$s">%2$s</a>', esc_url( get_permalink() ), get_the_post_thumbnail( null, 'medium_large' ) );
+		endif;
+	endif; ?>
 
 	<div class="entry-content">
 		<?php
