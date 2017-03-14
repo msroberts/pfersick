@@ -2,6 +2,12 @@
   position: relative;
   min-height: 64px;
 
+  @media screen and (max-width: $size__breakpoint-small) {
+    background-color: inherit;
+    position: sticky;
+    top: 0;
+  }
+
   .search-form {
     padding: 0.5em 2.5em 0.5em 0.5em;
     position: relative;
