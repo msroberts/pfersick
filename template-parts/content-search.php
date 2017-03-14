@@ -20,6 +20,10 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
+	<?php if ( has_post_thumbnail() ) {
+		printf('<a class="alignleft" href="%1$s">%2$s</a>', esc_url( get_permalink() ), get_the_post_thumbnail( null, 'thumbnail' ) );
+	} ?>
+
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
