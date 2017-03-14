@@ -694,28 +694,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@media screen and (min-width: 65em) {
-  .content-area {
-    float: left;
-    margin: 0 -25% 0 0;
-    width: 100%;
-  }
-
-  .site-main {
-    margin: 0 25% 0 0;
-  }
-
-  .site-content .widget-area {
-    float: right;
-    overflow: hidden;
-    width: 25%;
-  }
-
-  .site-footer {
-    clear: both;
-    width: 100%;
-  }
-}
 .site {
   background-color: #dcf0dc;
   max-width: 67.5em;
