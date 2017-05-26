@@ -788,6 +788,11 @@ a:hover, a:active {
     width: 50%;
   }
 
+  .site-branding {
+    float: left;
+    padding-right: 0;
+  }
+
   .main-navigation {
     clear: none;
     padding-right: 1em;
