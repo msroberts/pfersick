@@ -76,6 +76,11 @@
   }
 }
 
+.header-image,
+.header-image img {
+  display: block;
+}
+
 .site-branding {
   background-size: contain;
   background-repeat: no-repeat;

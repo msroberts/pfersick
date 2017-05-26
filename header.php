@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<?php if ( $img = get_header_image() ) : ?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="header-image">
 				<?php the_header_image_tag(); ?>
 			</a>
 		<?php endif; ?>
