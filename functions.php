@@ -65,6 +65,13 @@ function pfersick_setup() {
 		'default-image' => '',
 	) ) );
 
+	add_theme_support( 'custom-header', array(
+		'default-text-color'     => '005c60',
+		'width'                  => 1200,
+		'height'                 => 280,
+		'flex-height'            => true,
+	) );
+
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	remove_action( 'wp_print_styles', 'print_emoji_styles' );
 }
