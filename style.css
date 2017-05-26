@@ -768,6 +768,11 @@ a:hover, a:active {
   display: block;
 }
 
+@media screen and (min-width: 65em) {
+  .site-header {
+    padding: 1em;
+  }
+}
 .site-branding {
   background-size: contain;
   background-repeat: no-repeat;

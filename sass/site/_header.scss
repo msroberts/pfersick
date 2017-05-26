@@ -55,6 +55,12 @@
   display: block;
 }
 
+@media screen and (min-width: $size__breakpoint-large) {
+  .site-header {
+    padding: 1em;
+  }
+}
+
 .site-branding {
   background-size: contain;
   background-repeat: no-repeat;
