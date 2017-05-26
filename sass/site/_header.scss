@@ -73,6 +73,13 @@
     clear: none;
     padding-right: 1em;
     width: 50%;
+
+    ul {
+      margin: 1em 0;
+      padding-left: 3em;
+
+      @include clearfix;
+    }
   }
 }
 

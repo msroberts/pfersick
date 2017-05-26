@@ -786,6 +786,15 @@ a:hover, a:active {
     padding-right: 1em;
     width: 50%;
   }
+  .main-navigation ul {
+    margin: 1em 0;
+    padding-left: 3em;
+  }
+  .main-navigation ul::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
 }
 .site-branding {
   background-size: contain;
