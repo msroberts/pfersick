@@ -60,7 +60,15 @@
     padding: 1em;
 
     .search-form {
-      clear: both;
+      position: absolute;
+      width: 50%;
+      bottom: 1em;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 2em;
+      }
     }
   }
 

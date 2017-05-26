@@ -773,7 +773,14 @@ a:hover, a:active {
     padding: 1em;
   }
   .site-header .search-form {
-    clear: both;
+    position: absolute;
+    width: 50%;
+    bottom: 1em;
+  }
+  .site-header .search-form::after {
+    content: "";
+    display: block;
+    width: 2em;
   }
 
   .header-image {
