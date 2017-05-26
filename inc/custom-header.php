@@ -15,6 +15,23 @@
  * @package Pfersick
  */
 
+
+/**
+ * Add logo to site branding.
+ */
+function pfersick_site_logo() {
+	$css = <<<'HTML'
+	<style>
+		.site-branding {
+			background-image: url(%s);
+		}
+	</style>
+HTML;
+
+	printf( $css, esc_url( get_stylesheet_directory_uri() . '/images/felicity.svg' ) );
+}
+add_action( 'wp_head', 'pfersick_site_logo' );
+
 /**
  * Set up the WordPress core custom header feature.
  *
