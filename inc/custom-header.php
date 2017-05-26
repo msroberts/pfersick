@@ -24,8 +24,8 @@ function pfersick_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'pfersick_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '005c60',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 1200,
+		'height'                 => 400,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'pfersick_header_style',
 	) ) );
