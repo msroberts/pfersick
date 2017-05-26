@@ -68,7 +68,7 @@ function pfersick_setup() {
 	add_theme_support( 'custom-header', array(
 		'default-text-color'     => '005c60',
 		'width'                  => 1200,
-		'height'                 => 280,
+		'height'                 => 400,
 		'flex-height'            => true,
 	) );
 
