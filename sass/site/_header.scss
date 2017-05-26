@@ -55,6 +55,35 @@
   display: block;
 }
 
+.site-branding {
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: $color__text-heading;
+  font-family: $font__heading;
+  padding: 4px 64px 4px 56px;
+  position: relative;
+}
+
+.site-title {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin: 0;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-description {
+  margin: 0;
+}
+
 @media screen and (min-width: $size__breakpoint-large) {
   .site-header {
     padding: 1em;
@@ -94,34 +123,6 @@
       @include clearfix;
     }
   }
-}
-
-.site-branding {
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: $color__text-heading;
-  font-family: $font__heading;
-  padding: 4px 64px 4px 56px;
-  position: relative;
-}
-.site-title {
-  font-size: 1.75em;
-  font-weight: bold;
-  margin: 0;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-  }
-}
-
-.site-description {
-  margin: 0;
 }
 
 .menu-toggle {

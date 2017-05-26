@@ -768,6 +768,32 @@ a:hover, a:active {
   display: block;
 }
 
+.site-branding {
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #005c60;
+  font-family: "Book Antiqua", Constantia, "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  padding: 4px 64px 4px 56px;
+  position: relative;
+}
+
+.site-title {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin: 0;
+}
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.site-title a:hover, .site-title a:focus {
+  text-decoration: underline;
+}
+
+.site-description {
+  margin: 0;
+}
+
 @media screen and (min-width: 65em) {
   .site-header {
     padding: 1em;
@@ -808,32 +834,6 @@ a:hover, a:active {
     display: table;
   }
 }
-.site-branding {
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: #005c60;
-  font-family: "Book Antiqua", Constantia, "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  padding: 4px 64px 4px 56px;
-  position: relative;
-}
-
-.site-title {
-  font-size: 1.75em;
-  font-weight: bold;
-  margin: 0;
-}
-.site-title a {
-  color: inherit;
-  text-decoration: none;
-}
-.site-title a:hover, .site-title a:focus {
-  text-decoration: underline;
-}
-
-.site-description {
-  margin: 0;
-}
-
 .menu-toggle {
   background: none;
   border: 0;
