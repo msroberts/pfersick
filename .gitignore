@@ -5,3 +5,4 @@ ehthumbs.db
 .sass-cache
 *.css.map
 /sass/vendor
+/dist
