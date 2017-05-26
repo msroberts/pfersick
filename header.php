@@ -56,8 +56,8 @@
 					</path>
 				</svg>
 			</button>
-			<?php get_search_form(); ?>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php get_search_form(); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
