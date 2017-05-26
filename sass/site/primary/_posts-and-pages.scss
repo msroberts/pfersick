@@ -39,14 +39,16 @@
 }
 
 @media screen and (min-width: $size__breakpoint-small) {
-	a.entry-image {
+	a.entry-image,
+	.page-image {
 		float: right;
 		max-width: $size__breakpoint-small / 2;
 	}
 }
 
 @media screen and (min-width: $size__breakpoint-large) {
-	a.entry-image {
+	a.entry-image,
+	.page-image {
 		max-width: $size__breakpoint-large / 2;
 	}
 }

@@ -899,13 +899,15 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 37.5em) {
-  a.entry-image {
+  a.entry-image,
+  .page-image {
     float: right;
     max-width: 18.75em;
   }
 }
 @media screen and (min-width: 65em) {
-  a.entry-image {
+  a.entry-image,
+  .page-image {
     max-width: 32.5em;
   }
 }
