@@ -58,6 +58,21 @@
 @media screen and (min-width: $size__breakpoint-large) {
   .site-header {
     padding: 1em;
+
+    .search-form {
+      clear: both;
+    }
+  }
+
+  .header-image {
+    float: right;
+    width: 50%;
+  }
+
+  .main-navigation {
+    clear: none;
+    padding-right: 1em;
+    width: 50%;
   }
 }
 

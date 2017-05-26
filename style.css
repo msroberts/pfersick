@@ -772,6 +772,20 @@ a:hover, a:active {
   .site-header {
     padding: 1em;
   }
+  .site-header .search-form {
+    clear: both;
+  }
+
+  .header-image {
+    float: right;
+    width: 50%;
+  }
+
+  .main-navigation {
+    clear: none;
+    padding-right: 1em;
+    width: 50%;
+  }
 }
 .site-branding {
   background-size: contain;
