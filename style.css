@@ -816,13 +816,17 @@ a:hover, a:active {
 
   .site-branding {
     float: left;
-    margin: -1em -1em 0;
-    padding-left: 4.5em;
+    margin: -0.5em -0.5em 0;
+    padding-left: 4.75em;
     padding-right: 0;
   }
 
   .site-title {
     font-size: 2.5em;
+  }
+
+  .site-description {
+    padding-left: 0.125em;
   }
 
   .main-navigation {
@@ -832,7 +836,7 @@ a:hover, a:active {
   }
   .main-navigation ul {
     margin: 1em 0;
-    padding-left: 3em;
+    padding-left: 3.875em;
   }
   .main-navigation ul::after {
     clear: both;
