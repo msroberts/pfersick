@@ -799,7 +799,8 @@ a:hover, a:active {
 @media screen and (min-width: 65em) {
   .site-header {
     padding: 1em;
-    border-bottom: 1em solid #14937e;
+    border: 1em #14937e;
+    border-style: solid none;
   }
   .site-header .search-form {
     position: absolute;

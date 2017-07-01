@@ -88,7 +88,8 @@
 @media screen and (min-width: $size__breakpoint-large) {
   .site-header {
     padding: 1em;
-    border-bottom: 1em solid $color__background-body;
+    border: 1em $color__background-body;
+    border-style: solid none;
 
     .search-form {
       position: absolute;
