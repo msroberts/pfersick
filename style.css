@@ -514,6 +514,7 @@ a:hover, a:active {
 }
 .main-navigation ul {
   display: none;
+  font-weight: bold;
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -791,6 +792,7 @@ a:hover, a:active {
 }
 
 .site-description {
+  font-weight: bold;
   margin: 0;
 }
 
