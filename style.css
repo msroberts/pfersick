@@ -929,6 +929,23 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+a.back-to-top {
+  background: #f6f9ff;
+  border-radius: 50%;
+  color: #14937e;
+  font-size: 2.5em;
+  line-height: 1;
+  padding: 0.15em 0.25em 0.35em;
+  text-decoration: none;
+  display: block;
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+}
+
+/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,

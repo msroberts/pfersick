@@ -11,6 +11,10 @@
 
 ?>
 
+	<a href="#content" class="back-to-top" title="Back to top">
+		&#x25b2;
+	</a>
+
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">

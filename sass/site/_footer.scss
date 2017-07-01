@@ -1,0 +1,13 @@
+a.back-to-top {
+  background: $color__background-page;
+  border-radius: 50%;
+  color: $color__background-body;
+  font-size: 2.5em;
+  line-height: 1;
+  padding: 0.15em 0.25em 0.35em;
+  text-decoration: none;
+  display: block;
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+}
