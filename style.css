@@ -800,7 +800,7 @@ a:hover, a:active {
   }
   .site-header .search-form {
     position: absolute;
-    width: 50%;
+    width: 42.5%;
     bottom: 1em;
   }
   .site-header .search-form::after {
@@ -811,7 +811,7 @@ a:hover, a:active {
 
   .header-image {
     float: right;
-    width: 50%;
+    width: 57.5%;
   }
 
   .site-branding {
@@ -828,7 +828,7 @@ a:hover, a:active {
   .main-navigation {
     clear: none;
     padding-right: 1em;
-    width: 50%;
+    width: 42.5%;
   }
   .main-navigation ul {
     margin: 1em 0;
@@ -908,7 +908,7 @@ a:hover, a:active {
 @media screen and (min-width: 65em) {
   a.entry-image,
   .page-image {
-    max-width: 32.5em;
+    max-width: 57.5%;
   }
 }
 /*--------------------------------------------------------------

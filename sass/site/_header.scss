@@ -90,7 +90,7 @@
 
     .search-form {
       position: absolute;
-      width: 50%;
+      width: 100% - $size__image;
       bottom: 1em;
 
       &::after {
@@ -103,7 +103,7 @@
 
   .header-image {
     float: right;
-    width: 50%;
+    width: $size__image;
   }
 
   .site-branding {
@@ -120,7 +120,7 @@
   .main-navigation {
     clear: none;
     padding-right: 1em;
-    width: 50%;
+    width: 100% - $size__image;
 
     ul {
       margin: 1em 0;
