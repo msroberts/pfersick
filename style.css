@@ -913,6 +913,8 @@ a:hover, a:active {
   a.entry-image,
   .page-image {
     max-width: 57.5%;
+    position: relative;
+    top: -1em;
   }
 }
 /*--------------------------------------------------------------

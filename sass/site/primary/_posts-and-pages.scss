@@ -50,5 +50,7 @@
 	a.entry-image,
 	.page-image {
 		max-width: $size__image;
+		position: relative;
+		top: -1em;
 	}
 }
