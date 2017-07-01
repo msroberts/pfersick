@@ -42,7 +42,7 @@ function pfersick_custom_header_setup() {
 		'default-image'          => '',
 		'default-text-color'     => '005c60',
 		'width'                  => 1200,
-		'height'                 => 400,
+		'height'                 => 320,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'pfersick_header_style',
 	) ) );
