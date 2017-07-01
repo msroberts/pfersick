@@ -52,6 +52,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php pfersick_entry_footer(); ?>
+		<?php if ( is_singular() ) pfersick_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
