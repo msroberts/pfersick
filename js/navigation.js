@@ -109,4 +109,27 @@
 			}
 		}
 	}( container ) );
+
+	/**
+	 * Back-to-top arrow
+	 */
+	( function( button ) {
+		button.style.display = 'none';
+
+		window.addEventListener( 'scroll', function() {
+			var offset = window.innerHeight;
+
+			if ( document.body.scrollTop > offset || document.documentElement.scrollTop > offset ) {
+				button.style.display = '';
+			} else {
+				button.style.display = 'none';
+			}
+		} );
+
+		button.addEventListener( 'click', function( e ) {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+			e.preventDefault();
+		} );
+	}( document.querySelector( '.back-to-top' ) ) );
 } )();
