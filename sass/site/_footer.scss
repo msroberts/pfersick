@@ -8,6 +8,11 @@ a.back-to-top {
   text-decoration: none;
   display: block;
   position: fixed;
-  right: 1em;
-  bottom: 1em;
+  right: 0.5em;
+  bottom: 0.5em;
+
+  @media screen and (min-width: $size__breakpoint-small) {
+    right: 1em;
+    bottom: 1em;
+  }
 }
