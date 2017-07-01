@@ -105,9 +105,9 @@ add_action( 'widgets_init', 'pfersick_widgets_init' );
  * Enqueue scripts and styles.
  */
 function pfersick_scripts() {
-	wp_enqueue_style( 'pfersick-style', get_stylesheet_uri(), array(), '2.0.0' );
+	wp_enqueue_style( 'pfersick-style', get_stylesheet_uri(), array(), '2.1.0' );
 
-	wp_enqueue_script( 'pfersick-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'pfersick-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20170701', true );
 
 	wp_enqueue_script( 'pfersick-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
