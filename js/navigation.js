@@ -117,7 +117,7 @@
 		button.style.display = 'none';
 
 		window.addEventListener( 'scroll', function() {
-			var offset = window.innerHeight;
+			var offset = window.innerHeight / 2;
 
 			if ( document.body.scrollTop > offset || document.documentElement.scrollTop > offset ) {
 				button.style.display = '';
